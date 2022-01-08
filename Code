@@ -1,0 +1,7 @@
+Playing -> activity = discord.Game(name="!help")
+
+Streaming -> activity = discord.Streaming(name="!help", url="twitch_url_here")
+
+Listening -> activity = discord.Activity(type=discord.ActivityType.listening, name="!help")
+
+Watching -> activity = discord.Activity(type=discord.ActivityType.watching, name="!help")
