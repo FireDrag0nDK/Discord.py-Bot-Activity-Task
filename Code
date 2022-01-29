@@ -1,7 +1,13 @@
-Playing -> activity = discord.Game(name="!help")
+Playing -> await bot.change_presence(activity=discord.Game(name="a game"))
 
-Streaming -> activity = discord.Streaming(name="!help", url="twitch_url_here")
+Streaming ->  await bot.change_presence(activity=discord.Streaming(name="My Stream", url=my_twitch_url))
 
-Listening -> activity = discord.Activity(type=discord.ActivityType.listening, name="!help")
+Listening -> await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="a song"))
 
-Watching -> activity = discord.Activity(type=discord.ActivityType.watching, name="!help")
+Watching -> await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="a movie"))
+
+
+REMEMBER TO ADD BEFORE THE LAST PART OF THE CODE
+
+@bot.event
+async def on_ready():
