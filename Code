@@ -5,9 +5,3 @@ Streaming ->  await bot.change_presence(activity=discord.Streaming(name="My Stre
 Listening -> await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="a song"))
 
 Watching -> await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="a movie"))
-
-
-REMEMBER TO ADD BEFORE THE LAST PART OF THE CODE
-
-@bot.event
-async def on_ready():
